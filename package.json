@@ -1,0 +1,26 @@
+{
+  "name": "siq",
+  "version": "1.0.0",
+  "description": "Quote program",
+  "main": "index.js",
+  "scripts": {
+    "electron": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamCannon/SIQ.git"
+  },
+  "author": "Sam Cannon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamCannon/SIQ/issues"
+  },
+  "homepage": "https://github.com/SamCannon/SIQ#readme",
+  "dependencies": {
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2"
+  },
+  "devDependencies": {
+    "electron": "1.7.8"
+  }
+}
