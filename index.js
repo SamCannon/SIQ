@@ -10,7 +10,7 @@ app.on('ready', () => {
 		title: 'Solar Industries Quote'
 	});
 	
-	mainWindow.loadURL(`file://${__dirname}/index.html`);
+	mainWindow.loadURL(`file://${__dirname}/views/index.html`);
 
 	const mainMenu = Menu.buildFromTemplate(menuTemplate);
 
@@ -35,6 +35,16 @@ const menuTemplate = [
 					app.quit();
 				}
 			}
+		],
+	}, 
+	{
+		label: 'New Customer',
+		submenu: [
+			{
+				label: 'New Customer',
+				accelerator: 'Ctrl+N',
+				click() {newCustomer();}
+			}
 		]
 	}
 
@@ -43,11 +53,11 @@ const menuTemplate = [
 let newCustomer = () => {
 
 	newCustomerWindow = new BrowserWindow({
-		width: 400,
+		width: 600,
 		height: 300,
 		title: 'Add New Customer'
 	});
 
-	newCustomerWindow.loadURL(`file://${__dirname}/index.html`);
+	newCustomerWindow.loadURL(`file://${__dirname}/views/newCustomer.html`);
 
 };
