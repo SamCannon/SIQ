@@ -12,6 +12,8 @@ app.on('ready', () => {
 	
 	mainWindow.loadURL(`file://${__dirname}/views/index.html`);
 
+	mainWindow.on('closed', () => app.quit());
+
 	const mainMenu = Menu.buildFromTemplate(menuTemplate);
 
 	Menu.setApplicationMenu(mainMenu);
@@ -60,4 +62,26 @@ let newCustomer = () => {
 
 	newCustomerWindow.loadURL(`file://${__dirname}/views/newCustomer.html`);
 
+	newCustomerWindow.on('closed', () => newCustomerWindow = null);
+
 };
+
+if(process.env.NODE_ENV !== 'production') {
+
+	menuTemplate.push({
+		label: 'Developer',
+		submenu: [
+			{
+				label: 'Developer Tools',
+				click(item, focusedWindow) {
+
+					focusedWindow.toggleDevTools();
+
+				}
+			}
+
+		]
+
+	})
+
+}
