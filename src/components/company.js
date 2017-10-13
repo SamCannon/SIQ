@@ -1,6 +1,6 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class Company extends React.Component {
+class Company extends Component {
 
 	render() {
 
@@ -14,6 +14,6 @@ class Company extends React.Component {
 
 	}
 
-} 
+}; 
 
 export default Company;

@@ -1,7 +1,7 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class PhNum1 extends React.Component {
-
+class PhNum1 extends Component {
+	
 	render() {
 
 		return <input onChange={this.onInputChange}/>
@@ -14,6 +14,6 @@ class PhNum1 extends React.Component {
 
 	}
 
-} 
+};
 
 export default PhNum1;

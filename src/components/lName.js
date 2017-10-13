@@ -1,6 +1,6 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class LastName extends React.Component {
+class LastName extends Component {
 
 	render() {
 
@@ -14,6 +14,6 @@ class LastName extends React.Component {
 
 	}
 
-} 
+};
 
 export default LastName;

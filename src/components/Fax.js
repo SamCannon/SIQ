@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class FirstName extends Component {
+class Fax extends Component {
 
 	render() {
 
@@ -16,4 +16,4 @@ class FirstName extends Component {
 
 };
 
-export default FirstName;
+export default Fax;

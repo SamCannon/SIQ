@@ -10,7 +10,7 @@ app.on('ready', () => {
 		title: 'Solar Industries Quote'
 	});
 	
-	mainWindow.loadURL(`file://${__dirname}/views/index.html`);
+	mainWindow.loadURL(`file://${__dirname}/public/index.html`);
 
 	mainWindow.on('closed', () => app.quit());
 
@@ -60,7 +60,7 @@ let newCustomer = () => {
 		title: 'Add New Customer'
 	});
 
-	newCustomerWindow.loadURL(`file://${__dirname}/views/newCustomer.html`);
+	newCustomerWindow.loadURL(`file://${__dirname}/public/newCustomer.html`);
 
 	newCustomerWindow.on('closed', () => newCustomerWindow = null);
 

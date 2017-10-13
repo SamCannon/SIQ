@@ -1,6 +1,6 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class Email extends React.Component {
+class Email extends Component {
 
 	render() {
 
@@ -14,6 +14,6 @@ class Email extends React.Component {
 
 	}
 
-} 
+} ;
 
-export default firstName;
+export default Email;

@@ -1,4 +1,4 @@
-const React = require('react');
+import React, {Component} from 'react';
 
 class Opt1 extends React.Component {
 
@@ -14,4 +14,6 @@ class Opt1 extends React.Component {
 		
 	}
 
-}
+};
+
+export default Opt1;

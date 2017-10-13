@@ -1,6 +1,6 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class PhNum2 extends React.Component {
+class PhNum2 extends Component {
 
 	render() {
 
@@ -14,6 +14,6 @@ class PhNum2 extends React.Component {
 
 	}
 
-} 
+};
 
 export default PhNum2;

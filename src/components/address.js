@@ -1,6 +1,6 @@
-const React = require('react');
+import React, {Component} from 'react';
 
-class Address extends React.Component {
+class Address extends Component {
 
 	render() {
 
@@ -14,6 +14,6 @@ class Address extends React.Component {
 
 	}
 
-} 
+};
 
 export default Address;
