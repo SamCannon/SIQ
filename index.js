@@ -55,7 +55,7 @@ const menuTemplate = [
 let newCustomer = () => {
 
 	newCustomerWindow = new BrowserWindow({
-		width: 600,
+		width: 800,
 		height: 300,
 		title: 'Add New Customer'
 	});
@@ -63,6 +63,8 @@ let newCustomer = () => {
 	newCustomerWindow.loadURL(`file://${__dirname}/public/newCustomer.html`);
 
 	newCustomerWindow.on('closed', () => newCustomerWindow = null);
+
+	newCustomerWindow.setMenu(null);
 
 };
 

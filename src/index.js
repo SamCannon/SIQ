@@ -3,7 +3,8 @@ import React from 'react';
 import ReactDOM from 'react-dom'; 
 
 //Import individual components for rendering
-import CustomerInfo from './components/CustomerInfo.js';
+import CustomerInfo from './components/CustomerInfo';
+import Window from './components/Window';
 
 
 //app declaration to render all imported components
@@ -11,7 +12,12 @@ const App = () => {
 
 	return (
 		<div>
-			<CustomerInfo />
+			<div>
+				<CustomerInfo />
+			</div>
+			<div>
+				<Window />
+			</div>
 		</div>
 	);
 

@@ -1,6 +1,7 @@
-const React = require('react');
+//Import node dependencies
+import React, {Component} from 'react';
 
-class Opt7 extends React.Component {
+class Opt7 extends Component {
 
 	onInputChange(event) {
 
@@ -15,3 +16,5 @@ class Opt7 extends React.Component {
 	}
 
 }
+
+export default Opt7;

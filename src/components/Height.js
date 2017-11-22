@@ -1,8 +1,8 @@
 //Import node dependencies
 import React, {Component} from 'react';
 
-//Render drop down component
-class Opt1 extends Component {
+//Render text input component
+class Height extends Component {
 
 	onInputChange(event) {
 
@@ -12,10 +12,10 @@ class Opt1 extends Component {
 
 	render() {
 
-		return <select onChange={this.onInputChange} />;
+		return <input onChangeText={this.onInputChange} />;
 		
 	};
 
 };
 
-export default Opt1;
+export default Height;

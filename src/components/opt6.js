@@ -1,17 +1,21 @@
-const React = require('react');
+//Import node dependencies
+import React, {Component} from 'react';
 
-class Opt6 extends React.Component {
+//Render drop down component
+class Opt6 extends Component {
 
 	onInputChange(event) {
 
 		console.log(event.target.value);
 
-	}
+	};
 
 	render() {
 
-		return <select onChange={this.onInputChange} />
+		return <select onChange={this.onInputChange} />;
 		
-	}
+	};
 
-}
+};
+
+export default Opt6;

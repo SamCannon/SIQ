@@ -1,3 +1,4 @@
+//Import node dependencies
 import React, {Component} from 'react';
 
 class Email extends Component {

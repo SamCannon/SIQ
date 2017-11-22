@@ -1,6 +1,8 @@
+//Import node dependencies
 import React, {Component} from 'react';
 
-class Opt10 extends React.Component {
+
+class Opt10 extends Component {
 
 	onInputChange(event) {
 

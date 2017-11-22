@@ -1,20 +1,21 @@
 //Import node dependencies
 import React, {Component} from 'react';
 
-class Opt8 extends Component {
+//Render text input component
+class Width extends Component {
 
 	onInputChange(event) {
 
 		console.log(event.target.value);
 
-	}
+	};
 
 	render() {
 
-		return <select onChange={this.onInputChange} />
+		return <input onChangeText={this.onInputChange} />;
 		
-	}
+	};
 
-}
+};
 
-export default Opt8;
+export default Width;
