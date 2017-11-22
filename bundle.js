@@ -20230,8 +20230,10 @@
 
 	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } //import node dependencies
 
+
+	//Render text input component
 	var FirstName = function (_Component) {
 		_inherits(FirstName, _Component);
 
@@ -20572,16 +20574,16 @@
 		}
 
 		_createClass(Width, [{
+			key: 'render',
+			value: function render() {
+
+				return _react2.default.createElement('input', { onChange: this.onInputChange });
+			}
+		}, {
 			key: 'onInputChange',
 			value: function onInputChange(event) {
 
 				console.log(event.target.value);
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-
-				return _react2.default.createElement('input', { onChangeText: this.onInputChange });
 			}
 		}]);
 
@@ -20628,16 +20630,16 @@
 		}
 
 		_createClass(Height, [{
+			key: 'render',
+			value: function render() {
+
+				return _react2.default.createElement('input', { onChange: this.onInputChange });
+			}
+		}, {
 			key: 'onInputChange',
 			value: function onInputChange(event) {
 
 				console.log(event.target.value);
-			}
-		}, {
-			key: 'render',
-			value: function render() {
-
-				return _react2.default.createElement('input', { onChangeText: this.onInputChange });
 			}
 		}]);
 
